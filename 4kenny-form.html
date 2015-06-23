@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+		<style>	
+				form {
+					width: 400px;
+					height: 500px;
+					text-align: center;
+					position:relative;
+					top:90px;
+					bottom:-80px;
+					left: 410px;		
+					margin: 0px 0px 100px 0px;
+					background-color: #04B4AE;
+					border: 5px solid black;
+					}
+				input {
+					padding: 10px;
+					margin: 20px;
+					position: center;
+					}
+				.girlImage {
+					position: relative;
+					bottom:-110px;
+					left: 450px;
+					
+					}
+				footer {
+		    		    background-color:#04B4AE ;
+		       		 	color:white;
+		  		        clear:both;
+		    		    text-align:center;
+		       			padding:5px;   
+		       			position: relative;
+		       			bottom: -120px;
+		       			margin-top: 10px;
+		    		}
+		    	.footerimage {
+						max-height: 300px;
+		    			max-width: 250px;
+		    			border: 2px #ffffff solid;
+		    			z-index: -1;
+						}
+				.nav {
+						background-color: #04B4AE;
+						text-decoration: none;
+						border-radius: 10px;
+						border: 1px solid black;
+						position: fixed;
+						top:10px;
+						left:5px;
+						right: 5px;
+						z-index: 2;
+						}
+				nav ul a {
+						text-decoration: none;
+						}
+				nav ul li {
+						margin-left: 49px;
+					display: inline;
+					padding: 130px;					
+					}
+				nav li a:hover {
+					background-color: white;
+		            color:#04B4AE;
+		            text-decoration: none;
+					}
+				body {
+					font-family: "tahoma";
+					background-image: url("subtle_white_feathers/subtle_white_feathers.png");
+					}
+		</style>
+
+		
+	</head>
+
+	<body>
+		<div class="nav">
+			<nav>
+				<ul>
+					<li><a href="2Theresa-firstpage.html">Home</a></li>
+					<li><a href="3Gareth-2ndpage.html">Why Donate?</a></li>
+					<li><a href="4kenny-form.html">Donate Now!</a></li>
+				</ul>
+			 </nav>
+		</div>
+
+		<div class="one">
+			<form>
+				<h3>Donate Today!</h3>
+				
+				<input type="text" name="firstname" class="input" placeholder="First Name">
+				<br>
+				
+				<input type="text" name="lastname" class="input" placeholder="Last Name">
+				<br>
+				
+				<input type="text" name="email" class="input" placeholder="Email">
+				<br>
+
+				<input type = "text" name "phoneNumber" class "input" placeholder="Phone Number">
+				<br>
+				
+				<input type="text" name="donateAmount" class="input" placeholder="Donation Amount">
+				<br>
+				
+				<input type="submit" value="Submit" class="hi">
+			</form>
+	    </div>
+
+	    <img class="girlImage" src="http://img.pandawhale.com/post-18576-thank-you-gif-little-girl-d4vI.gif">
+
+		<footer>
+    		<p><img class="footerimage" src="http://bossfight.co/wp-content/uploads/2015/03/boss-fight-stock-images-photos-free-photography-kids-coding.jpg"></p>
+        	<p>@ The New York Code + Design Academy, 2015</p>
+        	<p>Contact Kenny, Theresa, Daniel, and Gareth at contact@codepups.com</p>
+    	</footer>
+
+    	<script>
+    		$(document).ready(function(){
+    			$(".hi").click(function(){
+    				alert("Thank You For Donating!");
+    			});
+    		});
+		</script>
+	</body>
+</html>
